@@ -1,0 +1,250 @@
+*{
+  margin: 0;
+}
+body{
+  background:linear-gradient(150deg,yellow,red);
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+#container{
+  text-align: center;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#card{
+  display: flex;
+  width: 700px;
+  margin: auto;
+  background-color:white;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+#card div{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#card2{
+  display: none;
+}
+#card2:target{
+  display: flex;
+  width: 700px;
+  margin: auto;
+  margin-top: -303px;
+  background-color:white;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+#card2 div{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+#card3{
+  display: none;
+}
+#card3:target{
+  display: flex;
+  width: 700px;
+  margin: auto;
+  background-color:white;
+  padding: 20px;
+  margin-top: -303px;
+
+  border-radius: 10px;
+}
+#cardimg{
+  animation: fade forwards 1s 1;
+
+}
+#date{
+  background-color: white;
+  animation: fade forwards 0.3s 1;
+}
+#title{
+  background-color: white;
+  animation: fade forwards 0.6s 1;
+}
+#disc{
+  background-color: white;
+  animation: fade forwards 0.8s 1;
+}
+#readMore{
+
+  animation: fade forwards 1s 1;
+}
+
+@keyframes fade {
+  0%{
+    opacity: 0.7;
+
+  }
+  50%{
+    opacity: 0.5;
+
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+
+#card3 div{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  
+}
+
+img{
+  height: 200px;
+  margin-left: -150px;
+  border-radius: 10px;
+   
+}
+button{
+  padding: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgb(235, 220, 56);
+  background:linear-gradient(150deg,yellow,red);
+  color: white;
+  cursor: pointer;
+}
+#imageWrapper{
+position: relative;
+background:linear-gradient(150deg,rgba(255, 255, 0, 0.468),rgba(255, 0, 0, 0.468));
+height: 203px;
+width: 354px;
+top: 236px;
+left: 267px;
+height: 203px;
+width: 358px;
+top: 238px;
+border-radius: 10px;
+z-index: 100000;
+}
+.dots{
+  border: 2px solid orange;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: orangered;
+
+}
+#navigate{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 100px;
+  right: 400px;
+  top: 400px;
+  justify-content: space-between;
+  margin: auto;
+}
+@media screen and (max-width:1200px)
+{
+  #imageWrapper{
+    width: 357px;
+    top: 118px;
+    left: 280px;
+  }
+  img{
+    margin-left: 32px;
+    margin-top: -120px;
+    box-shadow: orangered 0px 0px 10px 0px;
+    object-fit: contain;
+  }
+  
+  
+
+  #card{
+    display: flex;
+    width: 700px;
+    margin: auto;
+    background-color:white;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  #card div{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    animation: fade forwards 2s 1;
+    z-index: 10;
+  }
+  #card2 div{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    animation: fade forwards 2s 1;
+    z-index: 1022;
+  }
+  #card3 div{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    animation: fade forwards 2s 1;
+    z-index: 1000;
+  }
+#card3{
+  display: none;
+}
+#card3:target{
+  display: flex;
+  width: 700px;
+  margin: auto;
+  background-color:white;
+  padding: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: -445px;
+  z-index: 102;
+}
+#card2{
+  display: none;
+}
+#card2:target{
+  display: flex;
+  width: 700px;
+  margin: auto;
+  background-color:white;
+  padding: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: -445px;
+  z-index: 101;
+  
+}
+  .dots{
+    border: 2px solid orange;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: orangered;
+  
+  }
+  #navigate{
+    position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  width: 100px;
+  right: 0px;
+  top: 0px;
+  justify-content: space-between;
+  }
+  #card2 #readMore{
+    margin-top: -11px;
+    background-color: white;
+  }
+  
+}
+

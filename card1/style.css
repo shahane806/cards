@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+   min-width: 100px;
+  max-height: 100px;
+  border-radius: 180px;
+  object-fit:contain;
+  background-color: white;
+}
+
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:30px;
+    background-color: rgb(30, 30, 53);
+}
+#profile{
+    margin-right: 30px;
+}
+#profilediscription>h2{
+    margin-bottom: 20px;
+}
+#card{
+    margin-top: 40px;
+    display: flex;
+
+    flex-direction: row;
+    padding: 50px;
+    background-color: tomato;
+    color: white;
+    max-width: 340px;
+    z-index: 1;
+    border-radius: 9px;
+}
+#button{
+    z-index: 1;
+    margin-top: -19px;
+    position: relative;
+    text-align: center;
+    color: tomato;
+    background-color: yellow;
+    border:none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: fadein1 1s forwards;
+}
+
+#emailcard{
+    display: flex;
+    flex-direction: row;
+    width: 390px;
+    margin-top: 10px;
+    align-items: center;
+    color: rgb(112, 110, 110);
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 10px;
+}
+#email{
+   display: flex;
+   max-width: 350px;
+
+}
+#emailprofile>img{
+    height:50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 59px;
+}
+#emaildisc>h3{
+    color: tomato;
+
+}
+#emaildisc{
+    margin-right: 109px;
+}
+
+#facebookcard{
+    display: flex;
+    flex-direction: row;
+    width: 390px;
+    margin-top: 10px;
+    
+    align-items: center;
+    color: rgb(112, 110, 110);
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 10px;
+}
+#facebook{
+   display: flex;
+   max-width: 450px;
+
+}
+#facebookprofile>img{
+    height:50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 59px;
+}
+#facebookdisc>h3{
+    color: rgb(105, 105, 249);
+
+}
+#facebookdisc{
+    margin-right: 109px;
+}
+
+
+ #twittercard{
+    display:flex ;
+    flex-direction: row;
+
+    width: 390px;
+    margin-top: 10px;
+    align-items: center;
+    color: rgb(112, 110, 110);
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+#twitter{
+   display: flex;
+   max-width: 450px;
+
+}
+
+#twitterprofile>img{
+    height:50px;
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 59px;
+}
+#twitterdisc>h3{
+    color: rgb(105, 105, 249);
+
+}
+#twitterdisc{
+    margin-right: 109px;
+}
+
+#cards{
+    display: none;
+}
+#cards:target{
+    display: flex;
+    flex-direction: column;
+    height: 10px;
+    transition-property: height all 3s;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+#emailcard{
+    margin-top: -90px;
+    z-index: -100;
+    animation: translate1 1s 1;
+}
+#facebookcard{
+    animation: translate2 2s 1;
+}
+#twittercard{
+    animation: translate3 3s 1;
+}
+#button{
+    text-decoration: none;
+    color: red;
+    margin-left: 100px;
+}
+
+#back{
+    display: flex;
+    color: red;
+    background-color: yellow;
+    border-radius: 50px;
+    border: 1px solid yellow;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    min-height:  50px;
+    z-index: 10055;
+    top: 300px;
+    margin-top: -80px;
+    margin-bottom: 80px;
+    margin-left: 370px;
+    margin-right: 29px;
+    left: 900px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+#contactme:target{
+    display: none;
+    animation: fadein 1s;
+}
+#contactinfo{
+    display: flex;
+    color: white;
+    background-color: darkred;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    justify-content: start;
+
+    min-width: 0px;
+    min-height:  50px;
+z-index: 5000;
+    padding-left: 10px;
+    top: 300px;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    margin-right: 10px;
+    left: 900px;
+    cursor: pointer;
+}
+
+@keyframes change {
+    100%{
+        
+        margin-top:-42px;
+        margin-bottom: 20px;
+        background-color: tomato;
+        color: red;
+        border: 1px solid red;
+    
+    }
+    
+}
+@keyframes translate1 {
+    0%{
+        transform: translateY(-10rem);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(1rem);
+        opacity: 1;
+    }
+}
+@keyframes translate2 {
+    0%{
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(1rem);
+    }
+}
+@keyframes translate3 {
+    0%{
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(1rem);
+    }
+}
+@-webkit-keyframes fadein1{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#navigate h3{
+    font-size: xx-large;
+    margin-left: -40px;
+    color: rgb(205, 202, 202);
+    margin-top: 10px;
+
+}
